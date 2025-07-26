@@ -27,7 +27,8 @@ func main() {
 			expense = takeInput("Please Enter Expense")
 
 			if !(isAboveZero(taxRate) && isAboveZero(revenue) && isAboveZero(expense)) {
-				return
+				fmt.Println("All inputs should be above 0. Please try again.")
+				continue
 				//panic("All inputs should be above 0")
 				//break
 			}
